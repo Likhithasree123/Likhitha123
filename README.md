@@ -6,7 +6,7 @@ Duration: Nov 2025
 
 🧭 Project Overview
 
-This project demonstrates how Big Data Analytics can optimize operations in the Travel & Transportation industry — focusing on ride-sharing and airline sectors.
+
 The project consists of 5 analytical use cases, each addressing real-world business challenges such as dynamic pricing, route optimization, fraud detection, and ride demand forecasting.
 
 All models were developed and visualized using Databricks (PySpark + Python) and Power BI / Plotly Dash.
@@ -20,81 +20,10 @@ Visualization	Plotly Dash, Power BI
 Storage	Delta Lake / Parquet
 Version Control	GitHub
 Documentation	Markdown + PPT Presentation
-🏗️ Data Pipeline Architecture
-Data Sources (APIs, CSV, IoT)
-          │
-          ▼
-Ingestion Layer (PySpark / Databricks)
-          │
-          ▼
-Storage Layer (Raw, Processed, Curated in Delta/S3)
-          │
-          ▼
-Processing Layer (ETL, Feature Engineering)
-          │
-          ▼
-Modeling Layer (MLlib / scikit-learn)
-          │
-          ▼
-Visualization Layer (Dash / Power BI)
+
+  
 
 
-Each use case leverages the same unified data pipeline for ingestion, cleaning, analysis, modeling, and dashboard generation.
-
-📁 Project Structure
-📦 Travel-Transportation-Analytics
-│
-├── data/
-│   ├── travel_transportation_dataset.csv
-│   ├── processed/
-│   └── raw/
-│
-├── notebooks/
-│   ├── case1_smart_pricing.ipynb
-│   ├── case2_route_optimization.ipynb
-│   ├── case3_fast_matching.ipynb
-│   ├── case4_fraud_detection.ipynb
-│   └── case5_ride_prediction.ipynb
-│
-├── dashboards/
-│   ├── case1_dashboard.png
-│   ├── case2_dashboard.png
-│   ├── case3_dashboard.png
-│   ├── case4_dashboard.png
-│   └── case5_dashboard.png
-│
-├── models/
-│   ├── smart_pricing_model.pkl
-│   ├── fraud_detection_rf_model.pkl
-│   └── ride_forecast_model.pkl
-│
-├── scripts/
-│   ├── data_pipeline.py
-│   ├── preprocess.py
-│   ├── utils.py
-│
-├── README.md
-└── requirements.txt
-
-🚀 Setup Instructions
-🧩 1. Clone Repository
-git clone https://github.com/<your-username>/Travel-Transportation-Analytics.git
-cd Travel-Transportation-Analytics
-
-⚙️ 2. Create Virtual Environment
-python -m venv venv
-source venv/bin/activate   # (Mac/Linux)
-venv\Scripts\activate      # (Windows)
-
-📦 3. Install Dependencies
-pip install -r requirements.txt
-
-🧠 4. Run the Pipeline
-python scripts/data_pipeline.py
-
-💻 5. Launch Dashboards (optional)
-
-Use Databricks notebooks or Power BI to visualize dashboard .png outputs.
 
 🧠 Use Case Summaries
 1️⃣ Smart Pricing – Dynamic Pricing Model
